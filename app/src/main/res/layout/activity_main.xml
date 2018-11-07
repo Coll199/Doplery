@@ -7,6 +7,16 @@
     tools:context=".MainActivity"
     android:fitsSystemWindows="true">
 
+    <TextView
+        android:id="@+id/LoggedIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/intro_header"
+        android:paddingTop="32dp"
+        android:visibility="gone"
+        style="@style/Base.TextAppearance.AppCompat.Title" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -18,30 +28,21 @@
             android:paddingRight="16dp"
             android:paddingTop="16dp"
             android:paddingBottom="16dp"
+            android:layout_gravity="center_vertical"
             android:orientation="vertical"
             app:layout_behavior="16dp" >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/intro_header"
-                style="@style/Base.TextAppearance.AppCompat.Title" />
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
 
-                <android.support.design.widget.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/login_hint_value" />
-            </android.support.design.widget.TextInputLayout>
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/sign_out_button"
+                style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/login_button"/>
+                android:layout_marginTop="16dp"
+                android:text="@string/action_sign_out_button"
+                android:visibility="gone"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
