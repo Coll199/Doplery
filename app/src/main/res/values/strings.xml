@@ -4,6 +4,7 @@
     <string name="login_hint_value">Email (e.g. test@gmail.com)</string>
     <string name="password_hint_value">Password</string>
     <string name="login_button">Login</string>
+    <string name="upload_button">Upload</string>
     <string name="action_sign_out_button">Sign Out</string>
     <string name="register_button">Register</string>
     <string name="title_activity_login">Sign in</string>
@@ -22,4 +23,5 @@
     <string name="register_firstName">First Name</string>
     <string name="register_familyName">Family Name</string>
     <string name="finish_register">Finish</string>
+    <string name="advert_title">Title</string>
 </resources>
